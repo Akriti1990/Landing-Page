@@ -1,0 +1,410 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+header{
+    background-image: url("./image/bg1.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.main{
+    max-width: 1100px;
+    margin: auto;
+
+}
+ul{
+    list-style-type: none;
+    float: right;
+    margin-top: 25px;
+
+}
+
+ul li{
+    display: inline-block;
+    border: 1px solid transparent;
+}
+ul li a{
+    color: rgb(209, 121, 6);
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+}
+ul li a:hover{
+    background-color: wheat;
+    color: black;
+    transition: 0.6s ease;
+
+}
+.active{
+   background-color: wheat;
+   color: black; 
+}
+.logo img{
+    margin-top: 25px;
+    margin-left: 10px;
+    height: 80px;
+    width: 100px;
+}
+.center_text{
+    margin-top: 30px;
+    margin-left: 530px;
+}
+h1{
+    color: black;
+    
+}
+#bt1{
+    border: 1px solid darkred;
+    color: green;
+    padding: 5px;
+    text-decoration: none;
+}
+#bt1:hover{
+    background-color: wheat;
+    color: black;
+    transition: 0.6s ease;
+}
+
+body{
+    --main-color: #1da5af;
+    --primry-color: #888888;
+    --button-background: #4b709e;
+    --primary-button-background: #fe7649;
+    --background-color: #15191d;
+}
+
+
+h1{
+    font-size: 50px;
+}
+h2{
+    font-family: Avenir LT Std;
+    color: var(--main-color);
+}
+
+h3{
+    font-family: "muli";
+    color: var(--main-color);
+}
+h3{
+    font-weight: 750;
+    font-size: 2.2rem;
+    line-height: 6rem;
+    text-transform: capitalize;
+}
+
+p,
+a,
+li,
+button {
+  font-family: "muli";
+  color: var(--primry-color);
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 150%;
+  font-style: normal;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  line-height: 3.6rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+}
+
+
+.sub-menu{
+    background-color: rgba(192, 221, 178, 0.342);
+    position: fixed;
+    top: 10px;
+    right: 50px;
+    float: right;
+}
+
+
+
+.common-section {
+    width: 100%;
+    height: 70rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 9rem;
+    padding: 0 20rem;
+  }
+  
+  .common-section .left-side {
+    width: inherit;
+    height: inherit;
+  }
+  
+  .common-section .left-side figure {
+    width: 20rem;
+    height: 65rem;
+    background: #f3f9ff;
+    border-radius: 20px;
+  }
+  
+  .common-section .left-side img {
+    width: 45rem;
+    height: 60rem;
+    border-radius: 2rem;
+    margin-left: 10rem;
+    margin-top: 2.5rem;
+  }
+/* ------------------- our 2nd section right side css style 
+------------------------------------ */
+
+.common-section .right-side {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  
+  .common-section .right-side h2 {
+    width: 40rem;
+    font-style: normal;
+    font-size: 5.5rem;
+    font-weight: bold;
+    line-height: 6.3rem;
+    margin-bottom: 3rem;
+    text-transform: capitalize;
+  }
+  
+  .common-section .right-side p {
+    width: 40.3rem;
+    height: 9rem;
+    text-transform: lowercase;
+    margin-bottom: 3rem;
+  }
+  
+  .common-section .right-side .common-button {
+    padding: 1rem 3rem;
+    background-color: var(--primary-button-background);
+    margin-right: 2rem;
+    color: #fff;
+  }
+  
+  .common-section .right-side button:last-child {
+    color: var(--main-color);
+    background-color: transparent;
+  }
+  
+  .common-section .right-side .common-button:hover {
+    background: #cc491d;
+  }
+  
+  .common-section .right-side .common-button-normal:hover {
+    background: var(--primary-button-background);
+    color: #f0f7ff;
+  }
+  
+  /* ------------------- our 3rd section  css style 
+  ------------------------------------ */
+  
+  .section-third {
+    width: 100%;
+    height: 70rem;
+    background: var(--background-color);
+    padding: 3rem 20rem;
+  }
+  
+  .section-third h2 {
+    font-size: 5.5rem;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+    text-align: center;
+  }
+  
+  .section-third p {
+    width: 40rem;
+    height: 9rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    margin: auto;
+  }
+  
+  .section-third .section-third-task {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 4rem;
+  }
+  
+  .section-third .section-third-task .task-1,
+  .section-third .section-third-task .task-2,
+  .section-third .section-third-task .task-3 {
+    padding-top: 2rem;
+    /* background: cornsilk; */
+    text-align: center;
+    transition: all 0.3s linear;
+    border-radius: 2rem;
+  }
+  
+  .section-third .section-third-task .task-1 h3,
+  .section-third .section-third-task .task-2 h3,
+  .section-third .section-third-task .task-3 h3 {
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    margin-top: 2rem;
+  }
+  
+  .section-third .section-third-task .task-1 img,
+  .section-third .section-third-task .task-2 img,
+  .section-third .section-third-task .task-3 img {
+    width: 15rem;
+    height: 15rem;
+    transition: all 0.3s;
+  }
+  
+  .section-third .section-third-task .task-1 img,
+  .section-third .section-third-task .task-2 img {
+    height: 16rem;
+  }
+  
+  .section-third .section-third-task .task-3 {
+    background: #fff;
+    box-shadow: 0rem 0.4rem 2rem rgba(35, 52, 53, 0.25);
+  }
+  
+  .section-third .section-third-task .task-1:hover,
+  .section-third .section-third-task .task-2:hover {
+    background: #fff;
+    box-shadow: 0rem 0.4rem 2rem rgba(35, 52, 53, 0.25);
+  }
+  
+  .section-third .section-third-task .task-1:hover > img,
+  .section-third .section-third-task .task-2:hover > img,
+  .section-third .section-third-task .task-3:hover > img {
+    transform: rotate(360deg);
+  }
+  
+  
+
+
+  .contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  
+  }
+  .contact .content{
+    max-width: 800px;
+    text-align: center;
+  
+  }
+  .contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: rgb(16, 7, 16);
+  }
+  .contact .content p{
+    font-weight: 300;
+    color: rgb(16, 7, 16);
+  }
+  .container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  
+  }
+  .container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  
+  }
+  .container .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+  
+  }
+  .container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: rgb(16, 7, 16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+  }
+  .container .contactInfo .box .text1{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: rgb(16, 7, 16);
+    flex-direction: column;
+    font-weight: 300;
+  }
+  .container .contactInfo .box .text1 h1{
+    font-weight: 500;
+    color: skyblue;
+  
+  }
+  .contactForm{
+    width: 40%;
+    padding: 40px;
+    background: #4b709e;
+  }
+  .contactForm h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+  
+  }
+  .contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .contactForm .inputBox input,
+  .contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+  
+  }
+  .contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    
+  }
+  
